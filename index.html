@@ -108,12 +108,9 @@
     <button onclick="downloadPDF()" class="w-full bg-green-500 text-black p-2 rounded shadow mt-2 no-print">📄 Download PDF</button>
   </div>
 
-  <!-- Iframe added here -->
-  <iframe src="https://aaved123.github.io/Storag-bill/" width="100%" height="600" style="border:none; margin-top: 20px;" class="no-print"></iframe>
-
   <datalist id="descList">
     <option value="Digital">
-    <option value="Digital Sheet 300 gsm">
+    <option value="Digital 300 GSM">
     <option value="Sticker Sheet">
     <option value="Plastic Sticker">
     <option value="Transparent Sticker">
@@ -134,7 +131,7 @@
 
     const rateChart = {
       "digital": [20, 15, 13],
-      "digital sheet 300 gsm": [21, 16, 14],
+      "digital 300 gsm": [21, 16, 14],
       "sticker sheet": [25, 18, 16],
       "plastic sticker": [35, 28, 26],
       "transparent sticker": [35, 28, 26],
@@ -152,7 +149,7 @@
 
     const sizeNotRequiredItems = [
       "digital",
-      "digital sheet 300 gsm",
+      "digital 300 gsm",
       "sticker sheet",
       "plastic sticker",
       "transparent sticker",
@@ -419,7 +416,7 @@
 
       const thead = document.createElement('thead');
       thead.innerHTML = `
-        <tr style="background:#f7dc6f;">
+        <tr style="background:#b2babb;">
           <th style="border:1px solid #000; padding:8px;">Date</th>
           <th style="border:1px solid #000; padding:8px;">Description</th>
           <th style="border:1px solid #000; padding:8px;">Size</th>
